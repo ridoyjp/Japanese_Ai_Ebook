@@ -1,0 +1,39 @@
+
+/* EASY-TO-USE BOOK INTERFACE — all learning functions remain available */
+:root{--easy-ink:#213a58;--easy-paper:#fffdf8;--easy-line:#e8dfd2}
+body{background:#f6f2ea!important}
+.ebook-site-header{background:#f8f3e9!important;color:var(--easy-ink)!important;padding:12px max(18px,4vw)!important;min-height:0!important;box-shadow:0 2px 12px #1c2c3d0d!important}
+.ebook-site-header .book-brand{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ebook-site-header .book-brand span{font-size:clamp(19px,2.1vw,26px)!important;color:#233b59!important}
+.ebook-site-header .book-home-link{background:#fff!important;color:#294565!important;border:1px solid #dfd4c2!important;border-radius:12px!important;padding:10px 16px!important}
+.ebook-site-header .header-description{display:none!important}
+.ebook-site-header .simple-book-nav{max-width:1200px;margin:8px auto 0!important;position:relative}
+.ebook-site-header .simple-book-nav summary{display:inline-flex!important;align-items:center;cursor:pointer;background:#fff!important;color:#233b59!important;border:1px solid #ded3c3!important;border-radius:11px!important;padding:9px 15px!important;font-weight:700}
+.ebook-site-header .simple-book-nav:not([open]) .nav{display:none!important}
+.ebook-site-header .simple-book-nav[open] .nav{display:flex!important;flex-wrap:wrap;gap:8px!important;padding:12px 0!important;background:transparent!important}
+.ebook-site-header .nav button{background:white!important;color:#28425f!important;border:1px solid #e1d7c9!important;border-radius:10px!important;padding:10px 14px!important;font-size:15px!important;box-shadow:none!important}
+.ebook-site-header .nav button:hover,.ebook-site-header .nav button:focus-visible{background:#eaf2fc!important;border-color:#a5c2e8!important}
+.ebook-reader-toolbar{display:none!important}
+.book-breadcrumb{margin:10px 0 18px!important;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.book-breadcrumb button{font-size:15px!important;padding:8px 12px!important;border-radius:10px!important}
+.book-breadcrumb span{font-size:14px!important}
+.wrap{max-width:1150px!important;margin:auto!important;padding:20px clamp(14px,3vw,30px)!important}
+.wrap>section:not(#cover):not(#home):not(.hidden){max-width:100%!important}
+.panel{background:var(--easy-paper)!important;border:1px solid var(--easy-line)!important;border-radius:16px!important;box-shadow:0 5px 22px #293b4b0a!important;padding:clamp(18px,3vw,30px)!important;margin-bottom:18px!important}
+.panel h2{font-size:clamp(23px,2.5vw,32px)!important;line-height:1.4!important;color:var(--easy-ink)!important;margin-bottom:16px!important}
+.panel p,.panel li{line-height:1.85!important}
+.quick-grid,.lesson-choice-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.quick-grid .quick,.lesson-choice{min-height:80px!important;padding:16px!important;text-align:left!important;background:#fff!important;border:1px solid #e1d9cd!important;border-radius:12px!important;box-shadow:none!important;color:#233e5d!important;transition:background .2s,border-color .2s!important}
+.quick-grid .quick:hover,.lesson-choice:hover{background:#edf4fd!important;border-color:#a5c1e5!important;transform:none!important}
+.quick-grid .quick small{display:block;margin-top:5px;color:#65758a;font-weight:400}
+.illustrated-cards{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.illustrated-card{min-height:0!important;border-radius:14px!important;box-shadow:none!important;transform:none!important}
+.illustrated-card:hover{transform:none!important}
+.illustrated-lessons{gap:6px!important}
+.illustrated-menu-title{padding:10px 0!important;margin:0 0 15px!important}
+.illustrated-menu-title h2{font-size:clamp(24px,3vw,34px)!important}
+.book-pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+button,a,select{touch-action:manipulation}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #7ba7df!important;outline-offset:3px}
+@media(max-width:700px){.ebook-site-header{padding:12px 14px!important}.ebook-site-header .book-brand span{font-size:18px!important}.ebook-site-header .book-home-link{font-size:13px!important;padding:8px 10px!important}.wrap{padding:12px!important}.quick-grid,.lesson-choice-grid,.illustrated-cards{grid-template-columns:1fr!important}.panel{padding:17px!important}.ebook-site-header .simple-book-nav[open] .nav{flex-direction:column}.ebook-site-header .nav button{width:100%;text-align:left}.ebook-mobile-dock{padding-bottom:env(safe-area-inset-bottom)}}
+@media(prefers-reduced-motion:reduce){.quick-grid .quick,.lesson-choice{transition:none!important}}

@@ -1,0 +1,1 @@
+সহজ Book UI আপডেট: বড় হেডার, Reading Mode toolbar ও অতিরিক্ত visual clutter লুকানো হয়েছে। মূল HTML/JS lesson, audio, quiz, AI functionality রাখা হয়েছে। সব অধ্যায় ☰ অধ্যায় নির্বাচন মেনুতে আছে। Original home cover এবং animation code অক্ষত।

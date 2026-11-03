@@ -1,0 +1,1 @@
+নতুন Practice: Book Menu-তে Hiragana Writing এবং Kanji Stroke Order বাটন। practice.html সরাসরি খুললেও কাজ করে। পুরোনো JavaScript handler পরিবর্তন করা হয়নি। Kanji vector strokes: beginner 9 characters, offline.

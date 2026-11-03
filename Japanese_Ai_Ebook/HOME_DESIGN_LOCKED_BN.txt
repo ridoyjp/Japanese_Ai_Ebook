@@ -1,0 +1,1 @@
+Home Page-এর অনুমোদিত Screenshot অনুযায়ী রং, বোতাম, ৩টি Practice Link এবং ৬টি Learning Card রাখা হয়েছে। Desktop-এ দুই কলাম, Mobile-এ এক কলাম। অন্য Learning Page ও JavaScript অক্ষত।

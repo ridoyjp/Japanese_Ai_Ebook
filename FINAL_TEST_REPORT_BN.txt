@@ -1,0 +1,2 @@
+Fixed: AI timeout mismatch; Worker default model; Kanji preview reset. Audio has safe missing-volume fallback. Home design preserved.
+LIMITATIONS: Browser navigation blocked by administrator. Live AI requires deployed Worker and valid GEMINI_API_KEY. Stroke paths only exist for a subset of characters. Not all features can be certified PASS.
