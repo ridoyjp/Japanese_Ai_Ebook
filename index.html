@@ -1657,6 +1657,34 @@ body:not(.ebook-cover-only) main.wrap>section:not(.hidden){box-sizing:border-box
 /* Keep existing card sizes and layout, and allow scrolling for long content. */
 body:not(.ebook-cover-only) main.wrap>section:not(.hidden){overflow:visible}
 @media(max-width:720px){body:not(.ebook-cover-only) main.wrap>section:not(.hidden){min-height:100dvh}}
+</style><style id="mobile-layout-position-fix-2026">
+@media (max-width: 767px){
+ html,body{width:100%!important;max-width:100%!important;overflow-x:clip!important;-webkit-text-size-adjust:100%}
+ *,*::before,*::after{box-sizing:border-box}
+ img,svg,video,canvas{max-width:100%}
+ body:not(.ebook-cover-only) main.wrap{width:100%!important;max-width:100%!important;padding:0 12px 24px!important;margin:0!important}
+ body:not(.ebook-cover-only) main.wrap>section:not(.hidden){width:100%!important;max-width:100%!important;min-width:0!important;min-height:calc(100dvh - 72px)!important;margin:0 auto 20px!important;overflow-wrap:anywhere}
+ body.ebook-home-only main.wrap{padding:0!important}
+ body.ebook-home-only #home{width:100%!important;padding:16px 12px 28px!important;min-height:100dvh!important}
+ body.ebook-home-only #home .illustrated-cards{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ body.ebook-home-only #home .illustrated-card{width:100%!important;min-width:0!important;height:auto!important;min-height:90px!important}
+ .ebook-site-header{width:100%!important;max-width:100%!important;padding:12px!important;gap:10px!important}
+ .ebook-site-header .book-brand{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-width:0}
+ .ebook-site-header .header-description{min-width:0;width:100%}
+ .ebook-site-header h1{font-size:clamp(18px,5vw,26px)!important;line-height:1.35}
+ .ebook-site-header .chapter-direct-button{max-width:100%;white-space:normal}
+ main.wrap .panel,main.wrap .card,main.wrap .lesson-library,main.wrap .lesson-end-quiz{max-width:100%!important;min-width:0!important}
+ main.wrap .grid,main.wrap .library-grid{max-width:100%;min-width:0}
+ main.wrap button,main.wrap a,main.wrap input,main.wrap select,main.wrap textarea{max-width:100%}
+ main.wrap .controls,main.wrap .actions,main.wrap .nav{flex-wrap:wrap;gap:8px}
+ main.wrap table{max-width:100%}
+ main.wrap .vocab-table{width:100%}
+ .basic-return-nav{margin:30px 0 18px!important;padding:14px 0!important}
+ .basic-return-btn{width:min(100%,440px);white-space:normal;line-height:1.4}
+ body.ebook-cover-only #cover,body.ebook-cover-only #cover .illustrated-cover{min-height:100dvh!important;height:100dvh!important;overflow:hidden}
+ body.ebook-cover-only #cover .illustrated-cover-copy{max-width:100%;padding-left:12px;padding-right:12px}
+}
+@media(max-width:380px){body:not(.ebook-cover-only) main.wrap{padding-left:8px!important;padding-right:8px!important}body.ebook-home-only #home{padding-left:8px!important;padding-right:8px!important}}
 </style></head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
   <div class="illustrated-cover">
     <div class="ebook-sakura-layer" aria-hidden="true"></div><span class="ebook-robot-halo" aria-hidden="true"></span><span class="ebook-lantern-glow" aria-hidden="true"></span>
