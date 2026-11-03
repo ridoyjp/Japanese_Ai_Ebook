@@ -1878,30 +1878,23 @@ body:not(.ebook-cover-only) main.wrap>section:not(.hidden){overflow:visible}
 }
 </style>
 
-<style id="iphone-first-cover-no-scroll-fix">
-/* Restrict viewport locking to the first cover only. Other pages scroll normally. */
-@media (max-width:720px) {
- html:has(body.ebook-cover-only) {
-   height:100%!important;overflow:hidden!important;overscroll-behavior:none!important;
+
+<style id="final-mobile-cover-scroll-safety">
+@media(max-width:720px){
+ html:has(body.ebook-cover-only),body.ebook-cover-only{
+   overflow:hidden!important;overscroll-behavior:none!important;
  }
- body.ebook-cover-only {
-   position:fixed!important;inset:0!important;width:100%!important;
+ body.ebook-cover-only #cover{
+   position:fixed!important;inset:0!important;display:block!important;
+   width:100%!important;height:100dvh!important;max-height:100dvh!important;
+   overflow:hidden!important;margin:0!important;padding:0!important;z-index:100!important;
+ }
+ body.ebook-cover-only #cover .illustrated-cover{
    height:100%!important;min-height:0!important;max-height:100%!important;
-   margin:0!important;padding:0!important;overflow:hidden!important;
-   overscroll-behavior:none!important;
  }
- body.ebook-cover-only #cover {
-   position:fixed!important;inset:0!important;
-   width:100%!important;height:100%!important;max-height:100%!important;
-   margin:0!important;padding:0!important;overflow:hidden!important;
- }
- body.ebook-cover-only #cover .illustrated-cover {
-   height:100%!important;min-height:0!important;max-height:100%!important;
-   overflow:hidden!important;
- }
+ body:not(.ebook-cover-only) #cover{display:none!important}
 }
-</style>
-</head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
+</style></head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
   <div class="illustrated-cover">
     <div class="ebook-sakura-layer" aria-hidden="true"></div><span class="ebook-robot-halo" aria-hidden="true"></span><span class="ebook-lantern-glow" aria-hidden="true"></span>
     <button class="cover-book-menu-btn" type="button" onclick="showTab('home')" aria-label="Open Book Menu">📖 <span>Book Menu</span></button>
@@ -2212,7 +2205,7 @@ function quitExam(){document.getElementById('play').classList.add('hidden');docu
 
 function openLesson(tab,lesson){showTab(tab);if(tab==='words'){document.getElementById('vocabLesson').value=lesson;renderWords()}else if(tab==='learn'){document.getElementById('grammarLesson').value=lesson;renderGrammar()}else{document.getElementById('examLesson').value=lesson;quitExam()}}
 // Start on the first vocabulary lesson, not the grammar tab.
-document.getElementById('vocabLesson').value='1';renderWords();document.getElementById('grammarLesson').value='1';renderGrammar();showTab('cover');
+document.getElementById('vocabLesson').value='1';renderWords();document.getElementById('grammarLesson').value='1';renderGrammar();showTab(new URLSearchParams(location.search).get('open')==='book-menu'?'home':'cover');
 
 
 
