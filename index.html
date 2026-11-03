@@ -1685,7 +1685,73 @@ body:not(.ebook-cover-only) main.wrap>section:not(.hidden){overflow:visible}
  body.ebook-cover-only #cover .illustrated-cover-copy{max-width:100%;padding-left:12px;padding-right:12px}
 }
 @media(max-width:380px){body:not(.ebook-cover-only) main.wrap{padding-left:8px!important;padding-right:8px!important}body.ebook-home-only #home{padding-left:8px!important;padding-right:8px!important}}
-</style></head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
+</style>
+<style id="phone-cover-visual-alignment-2026">
+/* iPhone and Android: keep all four topic buttons in view and leave the robot unobstructed. */
+@media (max-width: 720px) {
+ body.ebook-cover-only #cover .illustrated-cover {
+   width:100%!important;height:100dvh!important;min-height:100dvh!important;
+   background-position:60% center!important;overflow:hidden!important;
+   display:block!important;
+ }
+ body.ebook-cover-only #cover .illustrated-cover-copy {
+   position:relative!important;z-index:5!important;display:flex!important;
+   width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;
+   flex:none!important;justify-content:flex-start!important;align-items:stretch!important;
+   padding:clamp(84px,13dvh,112px) 16px 0!important;
+   margin:0!important;gap:clamp(10px,1.5dvh,16px)!important;
+   text-align:left!important;transform:none!important;
+ }
+ body.ebook-cover-only #cover .illustrated-cover-copy h1 {
+   font-size:clamp(36px,9vw,52px)!important;line-height:1.03!important;
+   margin:0!important;letter-spacing:-.035em!important;
+ }
+ body.ebook-cover-only #cover .ebook-cover-tagline {
+   font-size:clamp(12px,3.5vw,16px)!important;line-height:1.4!important;
+   max-width:100%!important;overflow-wrap:normal!important;
+ }
+ body.ebook-cover-only #cover .cover-feature-grid {
+   display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+   gap:4px!important;width:100%!important;max-width:100%!important;
+   margin:2px 0!important;
+ }
+ body.ebook-cover-only #cover .cover-feature-button {
+   width:100%!important;min-width:0!important;padding:0 1px!important;
+   gap:5px!important;align-items:center!important;justify-content:flex-start!important;
+ }
+ body.ebook-cover-only #cover .cover-feature-button .round-feature {
+   width:clamp(49px,15vw,68px)!important;height:clamp(49px,15vw,68px)!important;
+   font-size:clamp(23px,7vw,32px)!important;flex-shrink:0!important;
+ }
+ body.ebook-cover-only #cover .cover-feature-button strong {
+   font-size:clamp(10px,2.75vw,13px)!important;line-height:1.15!important;
+   white-space:normal!important;overflow-wrap:normal!important;
+ }
+ body.ebook-cover-only #cover .cover-feature-button small {display:none!important}
+ body.ebook-cover-only #cover .illustrated-start {
+   box-sizing:border-box!important;display:flex!important;align-items:center!important;
+   justify-content:center!important;width:100%!important;max-width:100%!important;
+   min-height:54px!important;margin:5px 0 0!important;padding:10px 16px!important;
+   font-size:clamp(22px,6vw,29px)!important;
+ }
+ body.ebook-cover-only #cover .cover-support-line {display:none!important}
+ body.ebook-cover-only #cover .cover-book-menu-btn {
+   top:calc(12px + env(safe-area-inset-top,0px))!important;right:12px!important;
+   padding:9px 14px!important;font-size:14px!important;min-height:42px!important;
+ }
+}
+@media (max-width: 380px) {
+ body.ebook-cover-only #cover .illustrated-cover-copy{padding-left:12px!important;padding-right:12px!important}
+ body.ebook-cover-only #cover .cover-feature-button strong{font-size:10px!important}
+}
+@media (max-width:720px) and (max-height:650px) {
+ body.ebook-cover-only #cover .illustrated-cover-copy{padding-top:65px!important;gap:7px!important}
+ body.ebook-cover-only #cover .illustrated-cover-copy h1{font-size:34px!important}
+ body.ebook-cover-only #cover .cover-feature-button .round-feature{width:44px!important;height:44px!important}
+ body.ebook-cover-only #cover .illustrated-start{min-height:45px!important}
+}
+</style>
+</head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
   <div class="illustrated-cover">
     <div class="ebook-sakura-layer" aria-hidden="true"></div><span class="ebook-robot-halo" aria-hidden="true"></span><span class="ebook-lantern-glow" aria-hidden="true"></span>
     <button class="cover-book-menu-btn" type="button" onclick="showTab('home')" aria-label="Open Book Menu">📖 <span>Book Menu</span></button>
