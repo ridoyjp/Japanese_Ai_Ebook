@@ -1932,6 +1932,12 @@ body:not(.ebook-cover-only) main.wrap>section:not(.hidden){overflow:visible}
  #basics .basic-table button,#basics .basic-table .kana-sound-btn,#basics .basic-table .sound-btn{box-sizing:border-box!important;width:clamp(23px,6.3vw,31px)!important;min-width:0!important;min-height:25px!important;height:clamp(25px,7vw,34px)!important;padding:1px!important;margin:3px auto 0!important;font-size:clamp(12px,3.5vw,17px)!important;line-height:1!important;display:inline-flex!important;align-items:center!important;justify-content:center!important}
  #basics .basics-group summary{font-size:clamp(14px,4vw,20px)!important;overflow-wrap:anywhere!important}
 }
+</style><style id="basic-romaji-above-speaker-final">
+/* Keep kana, its romaji, then the pronunciation control in separate rows. */
+#basics .basic-table td:has(> .kana) > br {display:none!important}
+#basics .basic-table td:has(> .kana) > .kana {display:block!important;margin:0 auto 3px!important}
+#basics .basic-table td:has(> .kana) > small {display:block!important;position:static!important;float:none!important;width:100%!important;margin:0 auto 5px!important;padding:0!important;text-align:center!important;line-height:1.25!important}
+#basics .basic-table td:has(> .kana) > .basic-sound-btn {display:flex!important;position:static!important;float:none!important;margin:0 auto!important;clear:both!important;align-items:center!important;justify-content:center!important}
 </style></head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
   <div class="illustrated-cover">
     <div class="ebook-sakura-layer" aria-hidden="true"></div><span class="ebook-robot-halo" aria-hidden="true"></span><span class="ebook-lantern-glow" aria-hidden="true"></span>
