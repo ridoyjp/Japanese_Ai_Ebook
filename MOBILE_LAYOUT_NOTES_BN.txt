@@ -1,0 +1,1 @@
+Mobile: approved image with robot above four clickable topic buttons and Start Now. Desktop design untouched. Click targets are positioned over artwork. Text and button artwork is not independently editable on mobile. Device browser tests not performed.\n

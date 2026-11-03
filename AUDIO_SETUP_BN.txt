@@ -1,0 +1,5 @@
+Japanese Audio Upgrade
+1. iPhone Safari / Android Chrome: browser Japanese TTS works on user tap; installed voices and volume still matter.
+2. To add studio-quality MP3 files, put reviewed Japanese MP3 files in audio/ja and map exact text to filenames in audio/ja/manifest.json. Example: {"こんにちは":"konnichiwa.mp3"}.
+3. MP3 is preferred, with browser Japanese speech as fallback. MP3 recordings were NOT generated or bundled in this ZIP because a verified Japanese audio generation source was unavailable.
+4. Desktop and mobile design are unchanged. Actual device playback is not verified.
