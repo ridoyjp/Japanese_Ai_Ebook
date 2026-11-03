@@ -2212,7 +2212,7 @@ function quitExam(){document.getElementById('play').classList.add('hidden');docu
 
 function openLesson(tab,lesson){showTab(tab);if(tab==='words'){document.getElementById('vocabLesson').value=lesson;renderWords()}else if(tab==='learn'){document.getElementById('grammarLesson').value=lesson;renderGrammar()}else{document.getElementById('examLesson').value=lesson;quitExam()}}
 // Start on the first vocabulary lesson, not the grammar tab.
-document.getElementById('vocabLesson').value='1';renderWords();document.getElementById('grammarLesson').value='1';renderGrammar();showTab(new URLSearchParams(window.location.search).get('open') === 'book-menu' ? 'home' : 'cover');
+document.getElementById('vocabLesson').value='1';renderWords();document.getElementById('grammarLesson').value='1';renderGrammar();showTab('cover');
 
 
 
