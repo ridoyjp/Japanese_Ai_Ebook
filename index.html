@@ -1641,6 +1641,13 @@ body.ebook-home-only #home .illustrated-card .illustrated-main-button{width:100%
 .basic-return-btn{background:#1a4560;color:white;border:1px solid #1a4560;border-radius:16px;padding:16px 28px;font-size:clamp(16px,2vw,21px);font-weight:700;cursor:pointer;box-shadow:0 7px 20px #193f5920;transition:transform .15s,background .15s}
 .basic-return-btn:hover{background:#28617d;transform:translateY(-2px)}
 .basic-return-btn:focus-visible{outline:3px solid #f5a7c9;outline-offset:3px}
+</style><style id="cover-full-viewport-background-final">
+/* Cover only: edge-to-edge background on desktop and mobile. */
+html:has(body.ebook-cover-only),body.ebook-cover-only{margin:0!important;padding:0!important;width:100%!important;min-height:100%!important;overflow-x:hidden!important}
+body.ebook-cover-only .ebook-site-header{display:none!important}
+body.ebook-cover-only main.wrap,body.ebook-cover-only #cover{box-sizing:border-box!important;width:100%!important;max-width:none!important;min-height:100dvh!important;height:100dvh!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important}
+body.ebook-cover-only #cover .illustrated-cover{box-sizing:border-box!important;width:100%!important;max-width:none!important;height:100dvh!important;min-height:100dvh!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background-image:url('assets/original-home-scene.png')!important;background-repeat:no-repeat!important;background-position:center center!important;background-size:cover!important}
+@media(max-width:720px){body.ebook-cover-only #cover .illustrated-cover{background-position:58% center!important}}
 </style></head><body><header class="ebook-site-header"><div class="book-brand"><span>🌸 Japanese Ai Ebook</span><button class="book-home-link" type="button" onclick="showTab('home')">⌂ Book Menu</button></div><div class="header-description"><span class="header-eyebrow">✦ JAPANESE LEARNING • DIGITAL EDITION</span><h1>জাপানি শেখা, এখন বইয়ের মতো সহজ।</h1><p>🇯🇵 Japanese শেখো • 🇧🇩 বাংলায় বুঝো • এক অধ্যায় থেকে পরের অধ্যায়ে এগিয়ে চলো</p></div><button class="chapter-direct-button" type="button" onclick="openContextChapterMenu()" aria-label="বর্তমান বিষয়ের অধ্যায় নির্বাচন">☰ অধ্যায় নির্বাচন</button></header><main class="wrap"><section id="cover" class="sakura-cover-page hidden" aria-label="Japanese Ai Ebook Cover">
   <div class="illustrated-cover">
     <div class="ebook-sakura-layer" aria-hidden="true"></div><span class="ebook-robot-halo" aria-hidden="true"></span><span class="ebook-lantern-glow" aria-hidden="true"></span>
